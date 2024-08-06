@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빌바오 메모리 갤러리</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🔒 빌바오 메모리 갤러리</div>
+        <nav>
+            <ul>
+                <li><a href="#memories">나의 추억</a></li>
+                <li><a href="#collection">소장품</a></li>
+                <li><a href="#education">교육</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#contact">연락처</a></li>
+                <li><a href="#" id="loginBtn">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>빌바오 메모리 갤러리</h1>
+            <p>영원히 작품으로 소장되는 당신의 추억</p>
+        </section>
+
+        <section id="memories">
+            <h2>추억들</h2>
+            <div class="slider" id="imageSlider">
+                <!-- 이미지는 JavaScript로 동적 추가됩니다 -->
+            </div>
+        </section>
+
+        <section id="collection">
+            <h2>주요 소장품</h2>
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <img src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/22/22e0/22e0da06-c26d-4bc7-9ff0-ed76d499f56d/65de9134-2598-4e16-b53c-fb132a85615c.jpg" alt="마터, 1999">
+                    <h3>마터(Matter), 1999</h3>
+                    <p>작가: 아니쉬 카푸어</p>
+                </div>
+                <div class="collection-item">
+                    <img src="https://i0.wp.com/www.guggenheim-bilbao.eus/src/uploads/2019/05/Guggenheim-Bilbao-Serra-The-matter-of-Time-2.jpg" alt="시간의 문제, 1994-2005">
+                    <h3>시간의 문제(The Matter of Time), 1994-2005</h3>
+                    <p>작가: 리처드 세라</p>
+                </div>
+                <div class="collection-item">
+                    <img src="https://d32dm0rphc51dk.cloudfront.net/dFyhynkrKPxlrOyXRSqmGQ/large.jpg" alt="강아지, 1992">
+                    <h3>강아지(Puppy), 1992</h3>
+                    <p>작가: 제프 쿤스</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>교육 프로그램</h2>
+            <ul>
+                <li>AI와 예술의 만남: 월간 워크샵</li>
+                <li>어린이를 위한 디지털 아트 클래스</li>
+                <li>NFT 아티스트 양성 과정</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>갤러리 소개</h2>
+            <p>빌바오 메모리 갤러리는 현대 기술과 예술의 융합을 추구합니다. ChatGPT를 활용한 NFT 작품들을 통해 관람객들에게 새로운 예술 경험을 제공합니다.</p>
+        </section>
+
+        <section id="contact">
+            <h2>연락처</h2>
+            <p>주소: Abandoibarra Etorb., 2, 48009 Bilbo, Bizkaia, 스페인</p>
+            <p>전화: +34 944 35 90 00</p>
+            <p>이메일: info@bilbaomemorygallery.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 빌바오 메모리 갤러리</p>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>로그인</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="이메일" required>
+                <input type="password" placeholder="비밀번호" required>
+                <button type="submit">로그인</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
